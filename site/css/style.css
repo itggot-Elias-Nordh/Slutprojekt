@@ -1,0 +1,205 @@
+html, body {
+  width: 100vw;
+  margin: 0px;
+  font-family: sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+@font-face {
+    font-family: ArmaliteRifleFont;
+    src: url('../fonts/armalite-rifle.regular.ttf');
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  width: 100vw;
+  height: 75px;
+  background-color: #0F1B68;
+  -webkit-box-shadow: 0px -27px 10px 35px rgba(0,0,0,0.3);
+  -moz-box-shadow: 0px -27px 10px 35px rgba(0,0,0,0.3);
+  box-shadow: 0px -27px 10px 35px rgba(0,0,0,0.3);
+}
+
+.header > a > img {
+  width: 40px;
+  margin: 20px;
+}
+
+.header > a > h1 {
+  color: white;
+  font-size: 30px;
+  font-family: sans-serif;
+  font-weight: lighter;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  left: -1000px;
+  width: 400px;
+  height: 100vh;
+  background-image: url('../img/menu-img.png');
+  background-size: cover;
+  border-right: black solid;
+  border-width: 4px;
+  font-family: 'ArmaliteRifleFont';
+  z-index: 2;
+  -webkit-box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.75);
+}
+
+.menu > ul {
+  margin-top: 60px;
+  font-size: 50px;
+  list-style-type: none;
+}
+
+a > li {
+  margin-top: 50px;
+}
+
+ul > a {
+  text-decoration: none;
+  color: white;
+}
+
+.none {
+  display: none;
+}
+
+.shadow {
+  display: block;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.1);
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+}
+
+@keyframes menu-forward {
+  0% { left: -410px; }
+  100% { left: 0px; }
+}
+
+@keyframes menu-back {
+  0% { left: 0px; }
+  100% { left: -410px; }
+}
+
+.animation {
+  animation-name: menu-forward;
+  animation-duration: 0.4s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.animation2 {
+  animation-name: menu-back;
+  animation-duration: 0.4s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+main {
+  width: 100vw;
+}
+
+.map {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  background-image: url('../img/karta.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: flex-end;
+}
+
+.map > img {
+  position: fixed;
+  left: 48.5vw;
+  bottom: 48vh;
+  width: 50px;
+}
+
+.sprite {
+    background-image: url('../img/spritesheet.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    margin-top: 70px;
+}
+
+.sprite-compass {
+    width: 200px;
+    height: 200px;
+    background-position: -5px 5px;
+}
+
+.sprite-utter-med-skylt {
+    position: fixed;
+    bottom: 0px;
+    width: 211px;
+    height: 207px;
+    background-position: -5px -200px;
+}
+
+.tips {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 70px;
+  margin-left: 50px;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 100px;
+  text-align: center;
+}
+
+article > h1 {
+  font-size: 35px;
+  /*padding: 0px 40px 10px 40px;*/
+  padding: 10px;
+  width: 600px;
+  font-weight: lighter;
+  border-bottom: black solid;
+  border-width: 2px;
+  align-items: center;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: left;
+  width: 600px;
+}
+
+.side-img {
+  width: 300px;
+  margin-left: 150px;
+}
+
+.side-img > img {
+  position: fixed;
+  width: 275px;
+  height: 500px;
+  margin-top: 120px;
+}
