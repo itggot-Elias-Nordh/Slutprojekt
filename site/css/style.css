@@ -202,18 +202,25 @@ article {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-left: 100px;
   margin-top: 70px;
   text-align: center;
 }
 
 .tips > article {
   align-items: center;
+  margin-left: 100px;
+  margin-bottom: 100px;
 }
 
-article > h1 {
+.väder > article {
+  flex-direction: row;
+  justify-content: space-around;
+  width: 60vw;
+}
+
+article > h1, .väder > h1 {
   font-size: 35px;
-  padding: 10px;
+  padding: 10px 40px 10px 40px;
   margin-bottom: 0px;
   font-weight: lighter;
   border-bottom: black solid;
@@ -222,7 +229,7 @@ article > h1 {
 }
 
 .tips > article > h1 {
-    width: 600px;
+    width: 550px;
     margin-bottom: 30px;
 }
 
@@ -255,7 +262,7 @@ article > h1 {
 }
 
 .utrustning > img {
-  margin-right: 100px;
+  margin-right: 20px;
   width: 1000px;
   height: 800px;
 }
@@ -288,4 +295,12 @@ label > pre {
 input {
   margin-bottom: 20px;
   margin-left: 20px;
+}
+
+.väder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 70px;
+  margin-bottom: 40px;
 }
