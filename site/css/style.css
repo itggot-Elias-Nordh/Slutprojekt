@@ -24,6 +24,21 @@ pre {
   color: black;
 }
 
+input[type=checkbox]
+{
+  -ms-transform: scale(1.5);
+  -moz-transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  -o-transform: scale(1.5);
+  padding: 5px;
+  padding-right: 20px;
+}
+
+input, label {
+  cursor: pointer;
+  cursor: hand;
+}
+
 @font-face {
     font-family: ArmaliteRifleFont;
     src: url('../fonts/armalite-rifle.regular.ttf');
@@ -234,8 +249,9 @@ article > h1 {
 .utrustning {
   display: flex;
   flex-direction: row;
-  width: 90vw;
   justify-content: space-between;
+  width: 90vw;
+  margin-bottom: 100px;
 }
 
 .utrustning > img {
@@ -256,8 +272,20 @@ ul {
   margin: 0px;
 }
 
-ul > li {
+.kategorier > ul > a > li {
   font-size: 20px;
   padding-left: 25px;
+  margin: 0px;
   margin-bottom: 20px;
+  color: black;
+}
+
+label > pre {
+  font-size: 20px;
+  padding-left: 25px;
+}
+
+input {
+  margin-bottom: 20px;
+  margin-left: 20px;
 }
