@@ -9,6 +9,12 @@ a {
   text-decoration: none;
 }
 
+h2 {
+  font-size: 30px;
+  font-weight: lighter;
+  color: black;
+}
+
 @font-face {
     font-family: ArmaliteRifleFont;
     src: url('../fonts/armalite-rifle.regular.ttf');
@@ -115,6 +121,8 @@ ul > a {
 }
 
 main {
+  display: flex;
+  flex-direction: column;
   width: 100vw;
 }
 
@@ -162,27 +170,33 @@ main {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin-top: 70px;
   margin-left: 50px;
 }
 
 article {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   margin-left: 100px;
+  margin-top: 70px;
   text-align: center;
+}
+
+.tips > article {
+  align-items: center;
 }
 
 article > h1 {
   font-size: 35px;
-  /*padding: 0px 40px 10px 40px;*/
   padding: 10px;
-  width: 600px;
   font-weight: lighter;
   border-bottom: black solid;
   border-width: 2px;
   align-items: center;
+}
+
+.tips > article > h1 {
+    width: 600px;
 }
 
 .text {
@@ -202,5 +216,12 @@ article > h1 {
   position: fixed;
   width: 275px;
   height: 500px;
-  margin-top: 120px;
+  margin-top: 190px;
+}
+
+.side-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 10px;
 }
