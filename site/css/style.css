@@ -304,3 +304,97 @@ input {
   margin-top: 70px;
   margin-bottom: 40px;
 }
+
+@media screen and (max-width: 1200px){
+  .menu {
+    width: 600px;
+    background-position: -30px;
+  }
+
+  @keyframes menu-forward {
+    0% { left: -610px; }
+    100% { left: 0px; }
+  }
+
+  @keyframes menu-back {
+    0% { left: 0px; }
+    100% { left: -610px; }
+  }
+
+  .menu > ul {
+    font-size: 60px;
+  }
+
+  a > li {
+    margin-top: 100px;
+  }
+
+  .side-img {
+    display: none;
+  }
+
+  .tips > article {
+    margin-left: 0px;
+  }
+
+  .utrustning {
+    margin-top: 30px;
+  }
+
+  .utrustning > img {
+    width: 650px;
+    height: 500px;
+    margin: 60px;
+    margin-top: 20px;
+  }
+
+  .väder > article {
+    flex-direction: column-reverse;
+    align-items: center;
+    margin: 0px;
+  }
+
+  .väder > article > img {
+    margin-top: 100px;
+  }
+
+  .väder > h1 {
+    margin-bottom: -70px;
+  }
+}
+
+@media screen and (max-width: 1000px){
+  .menu {
+    width: 700px;
+    background-position: -50px;
+  }
+
+  @keyframes menu-forward {
+    0% { left: -710px; }
+    100% { left: 0px; }
+  }
+
+  @keyframes menu-back {
+    0% { left: 0px; }
+    100% { left: -710px; }
+  }
+
+  .sprite-utter-med-skylt {
+    position: fixed;
+    bottom: 0px;
+    width: 300px;
+    height: 285px;
+    background-position: 0px -293px;
+  }
+
+  .utrustning > img {
+    width: 600px;
+    height: 480px;
+    margin: 60px;
+    margin-top: 20px;
+  }
+
+  .väder > h1 {
+    margin-bottom: 0px;
+  }
+}
