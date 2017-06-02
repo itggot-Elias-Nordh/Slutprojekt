@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="sv">
   <head>
     <meta charset="utf-8">
     <title>Utterfångare</title>
@@ -12,49 +12,47 @@
         <a href="karta.html"><h1>Utterfångare</h1></a>
       </div>
       <div class="menu">
-        <ul>
-          <a href="karta.html"><li>Karta</li></a>
-          <a href="tips.html"><li>Tips</li></a>
-          <a href="javaScript:void(0);"><li>Utrustning</li></a>
-          <a href="väder.html"><li>Vader</li></a>
-        </ul>
+        <a href="karta.html">Karta</a>
+        <a href="tips.html">Tips</a>
+        <a href="javaScript:void(0);">Utrustning</a>
+        <a href="väder.html">Vader</a>
       </div>
       <div onclick="menuClose()" class="none">
       </div>
       <main>
         <article>
-          <h1>Jaktutrustning</h1>
+          <h2>Jaktutrustning</h2>
           <div class="utrustning">
             <div class="side-menu">
-              <div class="kategorier_closed none">
-                <a onclick="listOpen('.kategorier')" href="javaScript:void(0);"><h2>Kategorier<pre style="padding-left: 70px;">+</pre></h2></a>
+              <div class="kategorier_closed m none">
+                <a onclick="listOpen('.kategorier')" href="javaScript:void(0);">Kategorier</a><pre style="padding-left: 70px;">+</pre>
               </div>
-              <div class="kategorier">
-                <a onclick="listOpen('.kategorier')" href="javaScript:void(0);"><h2>Kategorier<pre style="padding-left: 74px;">-</pre></h2></a>
+              <div class="kategorier m">
+                <a onclick="listOpen('.kategorier')" href="javaScript:void(0);">Kategorier</a><pre style="padding-left: 70px;">-</pre>
                 <ul>
-                  <a href="javaScript:void(0);"><li>Sikten</li></a>
-                  <a href="javaScript:void(0);"><li>Pilbåge</li></a>
-                  <a href="javaScript:void(0);"><li>Knivar & verktyg</li></a>
-                  <a href="javaScript:void(0);"><li>Lockbete</li></a>
-                  <a href="javaScript:void(0);"><li>Kläder</li></a>
-                  <a href="javaScript:void(0);"><li>Vapen</li></a>
+                  <li>Sikten</li>
+                  <li>Pilbåge</li>
+                  <li>Knivar & verktyg</li>
+                  <li>Lockbete</li>
+                  <li>Kläder</li>
+                  <li>Vapen</li>
                 </ul>
               </div>
-              <div class="filter_closed">
-                <a onclick="listOpen('.filter')" href="javaScript:void(0);"><h2>Filter<pre style="padding-left: 142px;">+</pre></h2></a>
+              <div class="filter_closed m">
+                <a onclick="listOpen('.filter')" href="javaScript:void(0);">Filter</a><pre style="padding-left: 70px;">+</pre>
               </div>
-              <div class="filter none">
-                <a onclick="listOpen('.filter')" href="javaScript:void(0);"><h2>Filter<pre style="padding-left: 146px;">-</pre></h2></a>
-                <input id="1" type="checkbox"><label for="1"><pre>New</pre></label><br>
+              <div class="filter m none">
+                <a onclick="listOpen('.filter')" href="javaScript:void(0);">Filter</a><pre style="padding-left: 70px;">-</pre>
+                <input id="1" type="checkbox"><label for="1">New</label><br>
                 <input id="2" type="checkbox"><label for="2"><pre>Popular</pre></label><br>
                 <input id="3" type="checkbox"><label for="3"><pre>Highe ratings</pre></label><br>
                 <input id="4" type="checkbox"><label for="4"><pre>In store</pre></label><br>
                 <input id="5" type="checkbox"><label for="5"><pre>In online store</pre></label><br>
               </div>
-              <div class="pris_closed">
+              <div class="pris_closed m">
                 <a onclick="listOpen('.pris')" href="javaScript:void(0);"><h2>Prisklass<pre style="padding-left: 89px;">+</pre></h2></a>
               </div>
-              <div class="pris none">
+              <div class="pris none m">
                 <a onclick="listOpen('.pris')" href="javaScript:void(0);"><h2>Prisklass<pre style="padding-left: 93px;">-</pre></h2></a>
                 <input id="6" type="checkbox"><label for="6"><pre>Under $10</pre></label><br>
                 <input id="7" type="checkbox"><label for="7"><pre>$10 - $19.99</pre></label><br>

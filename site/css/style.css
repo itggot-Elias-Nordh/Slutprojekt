@@ -9,6 +9,10 @@ a {
   text-decoration: none;
 }
 
+h1 {
+  font-size: 30px;
+}
+
 h2 {
   font-family: sans-serif;
   font-size: 30px;
@@ -16,12 +20,17 @@ h2 {
   color: black;
 }
 
-pre {
+label, pre, .m > a {
   display: inline;
   font-family: sans-serif;
   font-size: 30px;
   font-weight: lighter;
   color: black;
+}
+
+.m {
+  margin-top: 12px;
+  margin-bottom: 12px;
 }
 
 input[type=checkbox]
@@ -34,7 +43,7 @@ input[type=checkbox]
   padding-right: 20px;
 }
 
-input, label {
+input, label, li {
   cursor: pointer;
   cursor: hand;
 }
@@ -60,6 +69,7 @@ input, label {
   -webkit-box-shadow: 0px -27px 10px 35px rgba(0,0,0,0.3);
   -moz-box-shadow: 0px -27px 10px 35px rgba(0,0,0,0.3);
   box-shadow: 0px -27px 10px 35px rgba(0,0,0,0.3);
+  z-index: 3;
 }
 
 .header > a > img {
@@ -69,7 +79,6 @@ input, label {
 
 .header > a > h1 {
   color: white;
-  font-size: 30px;
   font-family: sans-serif;
   font-weight: lighter;
 }
@@ -92,17 +101,21 @@ input, label {
   box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.75);
 }
 
-.menu > ul {
+.menu {
   margin-top: 60px;
   font-size: 50px;
   list-style-type: none;
 }
 
-a > li {
+.menu > a {
+  margin-left: 50px;
+}
+
+.menu > a, li {
   margin-top: 50px;
 }
 
-ul > a {
+a {
   text-decoration: none;
   color: white;
 }
@@ -218,8 +231,7 @@ article {
   width: 60vw;
 }
 
-article > h1, .väder > h1 {
-  font-size: 35px;
+article > h2, .väder > h2 {
   padding: 10px 40px 10px 40px;
   margin-bottom: 0px;
   font-weight: lighter;
@@ -228,7 +240,7 @@ article > h1, .väder > h1 {
   align-items: center;
 }
 
-.tips > article > h1 {
+.tips > article > h2 {
     width: 550px;
     margin-bottom: 30px;
 }
@@ -279,7 +291,7 @@ ul {
   margin: 0px;
 }
 
-.kategorier > ul > a > li {
+.kategorier > ul > li {
   font-size: 20px;
   padding-left: 25px;
   margin: 0px;
@@ -321,11 +333,11 @@ input {
     100% { left: -610px; }
   }
 
-  .menu > ul {
+  .menu {
     font-size: 60px;
   }
 
-  a > li {
+  .menu > a, li {
     margin-top: 100px;
   }
 
@@ -358,7 +370,7 @@ input {
     margin-top: 100px;
   }
 
-  .väder > h1 {
+  .väder > h2 {
     margin-bottom: -70px;
   }
 }
@@ -394,7 +406,7 @@ input {
     margin-top: 20px;
   }
 
-  .väder > h1 {
+  .väder > h2 {
     margin-bottom: 0px;
   }
 }
